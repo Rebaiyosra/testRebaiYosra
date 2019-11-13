@@ -1,0 +1,12 @@
+<ng-container>
+    <ul>
+        <li [ngClass]="'frais'">
+            <img src={{image}}>
+            {{nom | uppercase}}
+            Prix (kg): {{prix}}
+            <input type="checkbox" value={{frais}}> Frais 
+            Quantité: <input type="text" #qu>
+            <button (click)="afficher(qu.value)"> Calculer Prix </button>
+        </li>
+    </ul>
+</ng-container>
